@@ -1,0 +1,356 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --base : #212529;
+  --text : hwb(45 27% 33%);
+  --base2 : #282725;
+  --navbar : rgba(33, 37, 41, 0.7);
+  --white: rgba(203, 203, 203, 0.956);
+}
+
+/* text alignment justify class ------- */
+.justify{
+  text-align: justify;
+}
+
+/* contact form input border  */
+form input, textarea{
+  border-radius: 0%10px !important;
+}
+form input:focus, textarea:focus{
+  border: 1px solid var(--text) !important;
+}
+
+/* navbar ------------ */
+.navbar{
+  background-color:var(--navbar) ;
+}
+.navbar img {
+  width: 30px;
+  margin-right: 5px;
+  padding: 0;
+  /* height: 20px; */
+}
+.navbar ul li a{
+  font-weight: 400;
+  border-radius: 0%10px;
+  color: var(--white)  !important;
+  /* margin:0 25px !important ; */
+  padding: 8px 30px !important;
+}
+.navbar ul li a:hover{
+    background-color: var(--text);
+}
+/* navbar end ---------- */
+
+/* All Bootstrp Buttons  */
+.btn {
+  background-color: var(--text) !important;
+  color: whitesmoke !important;
+  font-weight: 500 !important;
+  transition: ease-in-out 0.2s !important;
+  border-radius: 0%10px !important;
+} 
+.btn:hover{
+  color: var(--base) !important;
+}
+
+/* remove list bullets and style  */
+ul{
+  list-style-type: none !important;
+}
+/* ------- hero section (2nd section) */
+
+.hero-section {
+  padding-top: 5rem;
+  padding-bottom: 135px;
+  height: 450px;
+  background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)),
+    rgba(36, 39, 38, 0.5) url(images/4.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.hero-caption {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.hero-title {
+  font-size: 46px;
+  color: var(--white);
+  line-height: 58px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+.hero-text {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+.navigation {
+  float: right;
+}
+
+
+/* Service section ------------ */
+.service-block {
+  margin-bottom: 30px;
+}
+.service-img {
+  margin-bottom: 30px;
+}
+.service-img img {
+  width: 100%;
+}
+
+.service-title {
+  font-size: 20px;
+  color: var(--base);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* pricing section --------- */
+.price {
+  font-size: 24px;
+  color: var(--text);
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-content a {
+  text-decoration: none;
+}
+.title {
+  color: var(--text);
+}
+.New {
+  color: var(--text);
+}
+
+.custom {
+  color: var(--white);
+  background-color: var(--text);
+}
+
+/* footer */
+.footer {
+  background-color: var(--base);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-block {
+  background-color: #aa914432;
+  padding: 40px 40px 10px 40px;
+  border-radius: 0%50px;
+}
+.footer-widget p {
+  color: var(--white);
+}
+.footer-widget .widget-title {
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-widget li a {
+  color: var(--white);
+  line-height: 34px;
+}
+.footer-widget li a:hover {
+  color: var(--text);
+}
+
+.footer-social ul li a i {
+  padding-right: 10px;
+  width: 30px;
+}
+.footer-social ul li a:hover i {
+  color: var(--text);
+}
+.footer .contact li {
+  position: relative;
+  padding-left: 40px;
+  display: block;
+  margin-bottom: 8px;
+  padding: 0 0 8px 40px;
+  color: var(--white);
+}
+.footer .contact li i {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.widget-newsletter .form-control {
+  height: 48px;
+  color: var(--white);
+  background-color:var(--base);
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 30px 0px 0px 30px;
+}
+.widget-newsletter button {
+  height: 48px;
+}
+
+/*-------------- tiny footer ------------*/
+.tiny-footer {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  font-size: 12px;
+  color: var(--base2);
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+.copyright-content {
+  padding: 12px;
+  color: var(--text);
+}
+
+.listnone a {
+  text-decoration: none;
+  color: var(--base);
+}
+
+/* inf slider  */
+.main {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.cardSlider {
+  height: 300px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.Cardslide-track {
+  display: flex;
+  width: calc(350px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.Cardslide-track:hover {
+  animation-play-state: paused;
+}
+
+.Cardslide {
+  height: 300px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.Cardslide img {
+  height: 150px;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.Cardslide img:hover {
+  transform: translateZ(60px);
+}
+
+.Cardslider::before {
+  left: 0;
+  top: 0;
+}
+
+.Cardslider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.Social-Feed a {
+  text-decoration: none;
+  color: var(--base);
+}
+
+.hero-section-new {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  height: 450px;
+  background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)),
+    rgba(36, 39, 38, 0.5) url(images/10.jpg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hero-section-New {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  height: 450px;
+  background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)),
+    rgba(36, 39, 38, 0.5) url(images/9.jpeg) no-repeat center;
+  background-size: cover;
+}
+.fnt {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:var(--text); /* Set a background color */
+  color: var(--base); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 0%10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 50%;
+  transition: ease-in-out 0.2s;
+}
+
+#myBtn:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    margin: 0 auto !important;
+  }
+  .navbar-toggler {
+    margin: 10px auto;
+  }
+}
