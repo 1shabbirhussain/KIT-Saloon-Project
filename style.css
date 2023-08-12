@@ -6,10 +6,10 @@
 
 :root{
   --base : #212529;
-  --text : hwb(45 27% 33%);
+  --text : #ab9145;
   --base2 : #282725;
-  --navbar : rgba(33, 37, 41, 0.7);
-  --white: rgba(203, 203, 203, 0.956);
+  --navbar : rgba(33, 37, 41, 0.8);
+  --white: #e3e3e3f4;
 }
 
 /* text alignment justify class ------- */
@@ -24,6 +24,7 @@ form input, textarea{
 form input:focus, textarea:focus{
   border: 1px solid var(--text) !important;
 }
+
 
 /* navbar ------------ */
 .navbar{
@@ -47,17 +48,28 @@ form input:focus, textarea:focus{
 }
 /* navbar end ---------- */
 
+
 /* All Bootstrp Buttons  */
 .btn {
   background-color: var(--text) !important;
-  color: whitesmoke !important;
+  color: var(--white) !important;
   font-weight: 500 !important;
   transition: ease-in-out 0.2s !important;
   border-radius: 0%10px !important;
-} 
+}
 .btn:hover{
   color: var(--base) !important;
 }
+.btn-link{
+  color: var(--white);
+  transition: ease-in-out 0.2s ;
+} 
+.btn-link:hover{
+  color: var(--base) !important;
+}
+
+
+
 
 /* remove list bullets and style  */
 ul{
@@ -312,12 +324,6 @@ ul{
   background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)),
     rgba(36, 39, 38, 0.5) url(images/9.jpeg) no-repeat center;
   background-size: cover;
-}
-.fnt {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-bottom: 50px;
-  
 }
 
 .hidden {
